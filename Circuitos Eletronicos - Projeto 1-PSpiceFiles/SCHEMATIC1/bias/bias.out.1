@@ -1,0 +1,63 @@
+
+**** 10/02/17 19:59:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\circuitos eletronicos - projeto 1-pspicefi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../circuitos eletronicos - projeto 1-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Vitor.user-PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CIRCUITOS ELETRONICOS - PROJETO 1
+V_V1         N14358 N14365 DC 0Vdc AC 127Vac 
+X1_TX1         N14358 N14365  N14478 N14482 ST_Model
+D_D1         N14503 N14478 Dbreak 
+D_D2         N14478 N14486 Dbreak 
+D_D3         N14503 N14482 Dbreak 
+D_D4         N14482 N14486 Dbreak 
+R_R1         N14503 N14486  1k TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file PSpiceModelApps_Include.ind for library file PSpiceModelApps_Include.lib.
+
+INFO(ORPSIM-15422): Making new index file PSpiceModelApps_Include.ind for library file PSpiceModelApps_Include.lib.
+
+Index has 1 entries from 1 file(s).
+
+
+INFO(ORPSIM-15423): Unable to find index file nomd.ind for library file nomd.lib.
+
+INFO(ORPSIM-15422): Making new index file nomd.ind for library file nomd.lib.
+
+Index has 34104 entries from 205 file(s).
+
+ERROR(ORPSIM-15142): Node N14358 is floating
+
+ERROR(ORPSIM-15142): Node N14365 is floating
+
+ERROR(ORPSIM-15142): Node X1_TX1.PI is floating
+

@@ -1,0 +1,11 @@
+* source CIRCUITOS ELETRONICOS - PROJETO 1
+D_D1         0 0 Dbreak 
+D_D2         0 N14486 Dbreak 
+D_D3         0 N14482 Dbreak 
+D_D4         N14482 N14486 Dbreak 
+V_V2         N14907 0  AC 0
++SIN 0 127 60 0 0 0
+C_C1         0 N14486  400u  TC=0,0 
+X_U1         N14486 N19100 0 LM7805C
+R_R1         0 N19100  1k TC=0,0 
+X_TX2         N14482 0 0 0 N14907 CETAPP_Model2

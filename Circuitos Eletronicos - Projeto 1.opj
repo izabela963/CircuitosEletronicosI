@@ -68,13 +68,18 @@
          ".\circuitos eletronicos - projeto 1-pspicefiles\schematic1\sim1.sim")))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (CETAPP
-      (FullPartName "CETAPP.Normal")
+    (R
+      (FullPartName "R.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (CETAPS
-      (FullPartName "CETAPS.Normal")
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ST
+      (FullPartName "ST.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
       (DeviceIndex "0"))
@@ -82,24 +87,29 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
+    (CETAPS
+      (FullPartName "CETAPS.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
       (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
+    (PWMXFM
+      (FullPartName "PWMXFM.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\SAC.OLB")
+      (DeviceIndex "0"))
+    (3phase
+      (FullPartName "3phase.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (CETAPP
+      (FullPartName "CETAPP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
       (DeviceIndex "0"))
     (LM7805C
       (FullPartName "LM7805C.Normal")
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
-      (DeviceIndex "0"))
-    (ST
-      (FullPartName "ST.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\TRANSFORMER\HYBRID\SUPPORTFILES\TRANSFORMER.OLB")
       (DeviceIndex "0"))
     (FLB
       (FullPartName "FLB.Normal")
@@ -144,11 +154,15 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\CircuitosEletronicosI\circuitos eletronicos - projeto 1.dsn")
+         "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1.dsn")
       (Path "Design Resources"
-         "C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\CircuitosEletronicosI\circuitos eletronicos - projeto 1.dsn"
+         "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1.dsn"
          "SCHEMATIC1")
-      (Path "Outputs"))
+      (Path "Design Resources"
+         "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1.dsn"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -158,9 +172,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1238 52 303")
-        (Scroll "-84 0")
-        (Zoom "100")
+        (Placement "44 2 3 -1 -1 -8 -31 109 1295 70 321")
+        (Scroll "-178 36")
+        (Zoom "93")
         (Occurrence "/"))
       (Path
          "C:\USERS\VITOR.USER-PC\DOCUMENTS\IZABELA\CKTSELETRONICOS\CIRCUITOSELETRONICOSI\CIRCUITOS ELETRONICOS - PROJETO 1.DSN")

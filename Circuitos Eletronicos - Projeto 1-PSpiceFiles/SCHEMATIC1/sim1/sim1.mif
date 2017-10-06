@@ -1,4 +1,4 @@
- lib="C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\CircuitosEletronicosI\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib", offset=3111, size=352
+ lib="c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib", offset=3466, size=343
  lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\breakout.lib, offset=431, size=44
  lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\opamp.lib, offset=121040, size=203
  lib=C:\Cadence\SPB_17.2\tools\PSpice\Library\opamp.lib, offset=117378, size=3661

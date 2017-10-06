@@ -1,7 +1,7 @@
 
-**** 10/02/17 20:10:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/05/17 21:07:12 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-sim1"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,7 +23,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.TRAN  0 50ms 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -32,23 +32,31 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source CIRCUITOS ELETRONICOS - PROJETO 1
-V_V1         N14905 N14890 DC 0Vdc AC 127Vac 
-X1_TX1         N14912 N14890  N14478 N14482 ST_Model
-D_D1         N14503 N14478 Dbreak 
-D_D2         N14478 N14486 Dbreak 
-D_D3         N14503 N14482 Dbreak 
+D_D1         0 0 Dbreak 
+D_D2         0 N14486 Dbreak 
+D_D3         0 N14482 Dbreak 
 D_D4         N14482 N14486 Dbreak 
-R_R1         N14503 N14486  1k TC=0,0 
-R_R2         N14905 N14912  10 TC=0,0 
+V_V2         N14907 N18232  AC 0
++SIN 0 127 60 0 0 0
+C_C1         0 N14486  400u  TC=0,0 
+X_U1         N14486 N19100 0 LM7805C
+R_R1         0 N19100  2.5 TC=0,0 
+X_TX1         N14907 N18232 0 0 N14482 CETAPS_Model4
 
 **** RESUMING sim1.cir ****
 .END
 
-ERROR(ORPSIM-15142): Node N14905 is floating
+WARNING(ORPSIM-15223): Library file "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib" has changed since index file PSpiceModelApps_Include.ind was created.
 
-ERROR(ORPSIM-15142): Node N14890 is floating
+WARNING(ORPSIM-15227): The timestamp changed from Thu Oct 05 20:57:17 2017 to Thu Oct 05 21:06:03 2017.
 
-ERROR(ORPSIM-15142): Node N14912 is floating
+INFO(ORPSIM-15422): Making new index file PSpiceModelApps_Include.ind for library file PSpiceModelApps_Include.lib.
 
-ERROR(ORPSIM-15142): Node X1_TX1.PI is floating
+Index has 12 entries from 1 file(s).
+
+ERROR(ORPSIM-15142): Node N14907 is floating
+
+ERROR(ORPSIM-15142): Node N18232 is floating
+
+ERROR(ORPSIM-15142): Node X_TX1.PI is floating
 

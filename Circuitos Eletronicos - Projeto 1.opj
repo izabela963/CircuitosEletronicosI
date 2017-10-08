@@ -40,17 +40,8 @@
        ".\circuitos eletronicos - projeto 1-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Model Libraries"
-      (Sort User)
-      (File
-         ".\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName
-           ".\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib")))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\circuitos eletronicos - projeto 1-pspicefiles\schematic1\bias.sim"
@@ -65,7 +56,14 @@
         (DisplayName "SCHEMATIC1-sim2")
         (Type "PSpice Profile"))
       (ActiveProfile
-         ".\circuitos eletronicos - projeto 1-pspicefiles\schematic1\sim1.sim")))
+         ".\circuitos eletronicos - projeto 1-pspicefiles\schematic1\sim1.sim"))
+    (Folder "Model Libraries"
+      (File
+         ".\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib"
+        (DisplayName
+           ".\circuitos eletronicos - projeto 1-PSpiceFiles\PSpiceModelApps\PSpiceModelApps_Include.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (R
@@ -162,7 +160,11 @@
          "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1.dsn"
          "Design Cache")
       (Path "Outputs")
-      (Path "PSpice Resources"))
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Select "Design Resources"
+         "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1.dsn"
+         "Design Cache" "R"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -173,8 +175,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 109 1295 70 321")
-        (Scroll "-178 36")
-        (Zoom "93")
+        (Scroll "537 167")
+        (Zoom "186")
         (Occurrence "/"))
       (Path
          "C:\USERS\VITOR.USER-PC\DOCUMENTS\IZABELA\CKTSELETRONICOS\CIRCUITOSELETRONICOSI\CIRCUITOS ELETRONICOS - PROJETO 1.DSN")

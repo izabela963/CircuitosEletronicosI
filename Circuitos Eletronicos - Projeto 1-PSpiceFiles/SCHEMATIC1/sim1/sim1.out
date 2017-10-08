@@ -1,5 +1,5 @@
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -23,7 +23,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 50ms 0 
+.TRAN  0 150ms 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -40,13 +40,13 @@ V_V2         N24773 0  AC 0
 +SIN 0 127 60 0 0 0
 X_TX1         N24773 0 N14478 0 N14482 CETAPS_Model4
 C_C1         0 N14486  8m  TC=0,0 
-R_R1         0 N30495  2.4 TC=0,0 
+R_R1         0 N30495  2.5 TC=0,0 
 X_U1         N14486 N30495 0 LM7805C
 
 **** RESUMING sim1.cir ****
 .END
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -68,7 +68,7 @@ X_U1         N14486 N30495 0 LM7805C
           VJ                     .7                          
 
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -106,7 +106,7 @@ X_U1         N14486 N30495 0 LM7805C
            D     .87         
 
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -126,7 +126,7 @@ X_U1         N14486 N30495 0 LM7805C
         VOFF    3            
 
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -141,23 +141,23 @@ X_U1         N14486 N30495 0 LM7805C
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N14478)    0.0000 (N14482)    0.0000 (N14486)-48.96E-18 (N24773)    0.0000     
+(N14478) 3.795E-30 (N14482) 3.797E-30 (N14486)-48.97E-18 (N24773)    0.0000     
 
-(N30495) 2.345E-21 (X_TX1.PI)    0.0000                  (X_TX1.SI1)    0.0000  
+(N30495) 2.443E-21 (X_TX1.PI)    0.0000                  (X_TX1.SI1)    0.0000  
 
 (X_TX1.SI2)    0.0000                 (X_TX1.SI3)    0.0000                     
 
 (X_TX1.SI4)    0.0000                 (X_U1.x1.4) 348.1E-12                     
 
-(X_U1.x1.5) 348.1E-12                 (X_U1.x1.6) 21.71E-21                     
+(X_U1.x1.5) 348.1E-12                 (X_U1.x1.6) 21.81E-21                     
 
-(X_U1.x1.7) 2.488E-21                 (X_U1.x1.8) 2.352E-21                     
+(X_U1.x1.7) 2.586E-21                 (X_U1.x1.8) 2.450E-21                     
 
-(X_U1.x1.9) 2.352E-21                 (X_U1.x1.55) 143.1E-21                    
+(X_U1.x1.9) 2.450E-21                 (X_U1.x1.55) 143.2E-21                    
 
-(X_U1.x1.56) 143.1E-21                (X_U1.x1.100)    7.4000                   
+(X_U1.x1.56) 143.2E-21                (X_U1.x1.100)    7.4000                   
 
-(X_U1.x1.101) 7.399E-06               (X_U1.x1.102)-48.96E-18                   
+(X_U1.x1.101) 7.399E-06               (X_U1.x1.102)-48.97E-18                   
 
 (X_U1.x1.105)     .0166               (X_U1.x1.106) 348.1E-12                   
 
@@ -183,7 +183,7 @@ X_U1         N14486 N30495 0 LM7805C
 
           JOB CONCLUDED
 
-**** 10/05/17 23:34:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 23:35:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-sim1"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
@@ -195,5 +195,5 @@ X_U1         N14486 N30495 0 LM7805C
 
 
 
-  Total job time (using Solver 1)   =         .31
+  Total job time (using Solver 1)   =         .36
 

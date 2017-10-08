@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
+** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronicos - projeto 1-PSpiceFiles\SCHEMATIC1\sim2.sim ] 
 
 ** Creating circuit file "sim2.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -8,7 +8,7 @@
 * Local Libraries :
 .LIB "../../../circuitos eletronicos - projeto 1-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
 * From [PSPICE NETLIST] section of C:\Users\Vitor.user-PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nomd.lib" 
+.lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 1000ns 0 

@@ -1,7 +1,8 @@
-
-**** 10/02/17 20:13:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** Analysis Setup ****
 
- ** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
+**** 10/07/17 19:00:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
 
  ****     CIRCUIT DESCRIPTION
@@ -20,7 +21,7 @@
 * Local Libraries :
 .LIB "../../../circuitos eletronicos - projeto 1-PSpiceFiles/PSpiceModelApps/PSpiceModelApps_Include.lib" 
 * From [PSPICE NETLIST] section of C:\Users\Vitor.user-PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nomd.lib" 
+.lib "nom.lib" 
 
 *Analysis directives: 
 .TRAN  0 1000ns 0 
@@ -32,21 +33,23 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source CIRCUITOS ELETRONICOS - PROJETO 1
-V_V1         N14905 0 DC 0Vdc AC 127Vac 
-X1_TX1         N14912 0  N14478 N14482 ST_Model
 D_D1         0 N14478 Dbreak 
 D_D2         N14478 N14486 Dbreak 
 D_D3         0 N14482 Dbreak 
 D_D4         N14482 N14486 Dbreak 
-R_R1         0 N14486  1k TC=0,0 
-R_R2         N14905 N14912  10 TC=0,0 
+V_V2         N24773 0  AC 0
++SIN 0 127 60 0 0 0
+X_TX1         N24773 0 N14478 0 N14482 CETAPS_Model4
+C_C1         0 N14486  8m  TC=0,0 
+R_R1         0 N30495  2.5 TC=0,0 
+X_U1         N14486 N30495 0 LM7805C
 
 **** RESUMING sim2.cir ****
 .END
 
-**** 10/02/17 20:13:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 19:00:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
+ ** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
 
  ****     Diode MODEL PARAMETERS
@@ -57,58 +60,69 @@ R_R2         N14905 N14912  10 TC=0,0
 
 
 
-               Dbreak          
+               Dbreak          X_U1.x1.Dlim    X_U1.x1.Dz      
+          IS   10.000000E-15   10.000000E-15   50.000000E-15 
+          BV                                    7.11         
+         IBV                                   50.000000E-09 
+          RS     .1                             3            
+         CJO  100.000000E-15                                 
+          VJ                     .7                          
+
+
+**** 10/07/17 19:00:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x1.Npn1    
+               NPN             
+       LEVEL    1            
           IS   10.000000E-15 
-          RS     .1          
-         CJO  100.000000E-15 
+          BF   50            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
 
 
-**** 10/02/17 20:13:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 10/07/17 19:00:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
+ ** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
 
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+ ****     Voltage Controlled Switch MODEL PARAMETERS
 
 
 ******************************************************************************
 
 
 
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
+               X_U1.x1.Sbg1    
+         RON    1            
+        ROFF    1.000000E+06 
+         VON    3.7          
+        VOFF    3            
 
-(N14478) 1.929E-21 (N14482) 1.929E-21 (N14486)-2.681E-27 (N14905)    0.0000     
-
-(N14912)    0.0000 (X1_TX1.PI)    0.0000                 (X1_TX1.SI) 1.929E-21  
-
-(X1_TX1.SI1) 1.929E-21                
-
-
-
-
-    VOLTAGE SOURCE CURRENTS
-    NAME         CURRENT
-
-    V_V1         0.000E+00
-
-    TOTAL POWER DISSIPATION   0.00E+00  WATTS
-
-
-
-          JOB CONCLUDED
-
-**** 10/02/17 20:13:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
-
- ** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
-
-
- ****     JOB STATISTICS SUMMARY
-
-
-******************************************************************************
-
-
-
-  Total job time (using Solver 1)   =         .27
-

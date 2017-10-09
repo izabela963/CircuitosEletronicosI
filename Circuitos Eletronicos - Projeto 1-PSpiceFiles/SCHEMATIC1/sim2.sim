@@ -6,18 +6,18 @@ ProfileName= "sim2"
 ProfileFile= "sim2.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "sim2.cir" 
-DataFile= "C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos" 
-OutFile= "C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos" 
+DataFile= "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos" 
+OutFile= "c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "1000ns" 
++0 "40m" 
 +1 "" 
-+2 "0" 
-+3 "" 
++2 "500u" 
++3 "1m" 
 +4 "" 
 +5 "" 
 +6 "" 

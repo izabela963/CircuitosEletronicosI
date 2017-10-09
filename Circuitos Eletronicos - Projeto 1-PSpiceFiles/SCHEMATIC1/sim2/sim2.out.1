@@ -1,7 +1,7 @@
+
+**** 10/09/17 18:57:37 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
-**** 10/02/17 20:12:20 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
-
- ** Profile: "SCHEMATIC1-sim2"  [ C:\Users\Vitor.user-PC\Documents\Izabela\cktsEletronicos\Circuitos Eletronicos - Projeto 1-PSpiceFi
+ ** Profile: "SCHEMATIC1-sim2"  [ c:\users\vitor.user-pc\documents\izabela\cktseletronicos\circuitoseletronicosi\circuitos eletronico
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,7 +23,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.TRAN  0 40m 500u 1m 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -32,23 +32,34 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source CIRCUITOS ELETRONICOS - PROJETO 1
-V_V1         N14905 N14890 DC 0Vdc AC 127Vac 
-X1_TX1         N14912 N14890  N14478 N14482 ST_Model
-D_D1         N14503 N14478 Dbreak 
+D_D1         0 N14478 Dbreak 
 D_D2         N14478 N14486 Dbreak 
-D_D3         N14503 N14482 Dbreak 
+D_D3         0 N14482 Dbreak 
 D_D4         N14482 N14486 Dbreak 
-R_R1         N14503 N14486  1k TC=0,0 
-R_R2         N14905 N14912  10 TC=0,0 
+V_V2         N24773 0  AC 0
++SIN 0 127 60 0 0 0
+X_TX1         N24773 0 N14478 0 N14482 CETAPS_Model4
+C_C1         0 N14486  8m  TC=0,0 
+R_R1         0 N30495  2.5 TC=0,0 
+X_U1         N14486 N30495 0 LM7805C
+D_D6         N37062 N34338 Dbreak 
+D_D8         N34528 N34338 Dbreak 
+C_C2         0 N34338  470u  TC=0,0 
+X_TX2         N34346 0 N37062 0 N34528 CETAPS_Model4
+V_V3         N34346 0  AC 0
++SIN 0 127*sqrt(2) 60 0 0 0
+--------------------------$
+ERROR -- Expecting keyword STIMULUS, saw 0.
+
+X_U3         N34338 N35335 0 LM7805C
+X_U4         N34338 N35344 0 LM7805C
+D_D10         N35335 N35510 Dbreak 
+D_D11         N35344 N35510 Dbreak 
+C_C3         0 N35335  0.1u  TC=0,0 
+C_C4         0 N35344  0.1u  TC=0,0 
+R_R2         0 N35510  2.5 TC=0,0 
+C_C5         0 N35510  10u  TC=0,0 
 
 **** RESUMING sim2.cir ****
 .END
-
-ERROR(ORPSIM-15142): Node N14905 is floating
-
-ERROR(ORPSIM-15142): Node N14890 is floating
-
-ERROR(ORPSIM-15142): Node N14912 is floating
-
-ERROR(ORPSIM-15142): Node X1_TX1.PI is floating
 
